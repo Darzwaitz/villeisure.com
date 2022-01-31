@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CAEJ,eAAe,CAAA,QAAC,CAChB,uBAAuB,CAAA,2BAAC,CACxB,sBAAsB,CAAA,2BAAC,CAEvB,iBAAiB,CAAA,QAAC,CAClB,yBAAyB,CAAA,0BAAC,CAC1B,wBAAwB,CAAA,yBAAC,CAEzB,gBAAgB,CAAA,QAAC,CACjB,wBAAwB,CAAA,0BAAC,CACzB,uBAAuB,CAAA,yBAAC,CAExB,kBAAkB,CAAA,QAAC,CACnB,0BAA0B,CAAA,yBAAC,CAC3B,yBAAyB,CAAA,yBAAC,CAG1B,qBAAqB,CAAA,KAAC,CAGtB,iBAAiB,CAAA,iBAAC,CAGlB,iBAAiB,CAAA,QAAC,CACnB,AC1BD,AAAA,IAAI,AAAC,CAED,SAAS,CAAE,KAAK,CAiBnB,AAGD,AAAA,CAAC,CACD,CAAC,AAAA,OAAO,CACR,CAAC,AAAA,QAAQ,AAAC,CACN,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CACtB,AAED,AAAA,IAAI,AAAC,CACD,UAAU,CAAE,UAAU,CAMzB,ACrCD,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,2BAA2B,CACxC,WAAW,CAAE,GAAG,CACjB,ACHD,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,GAAG,CAAC,sCAAsC,CAAC,GAAG,CACtE",
     "sources": [
-        "../scss/styles.scss"
+        "../scss/styles.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/base/_base.scss",
+        "../scss/base/_typography.scss",
+        "../scss/layout/_home-body.scss"
     ],
     "names": [],
     "file": "styles.min.css"
