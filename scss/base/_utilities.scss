@@ -1,4 +1,32 @@
-// unused yet - delete this on first use
+// anchor tags global
+a:link,
+a:visited {
+  color: var(--color-quaternary);
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  position: relative;
+  transition: all var(--transition-duration) cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+}
+
+// paragraphs
+p {
+  color: var(--color-white);
+  font-size: calc(1rem + 1vw);
+  font-weight: 300;
+}
+// list itemz
+li {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+// iconz
+i {
+  font-size: var(--font-size-title);
+  color: var(--color-secondary);
+}
 
 // .u-center-text {
 //     text-align: center !important;

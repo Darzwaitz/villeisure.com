@@ -1,4 +1,38 @@
 .header {
-  background-color: var(--color-primary);
+  // background-color: var(--color-primary);
+  background: linear-gradient(
+      var(--color-primary-m-light),
+      var(--color-primary-m-light)
+    ),
+    url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   grid-column: container-start / container-end;
+
+  &__main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    input[type="checkbox"] {
+      position: absolute;
+
+      @include checkbox-menu;
+
+      // opacity: 0;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    &--hamburger {
+      position: absolute;
+      @include checkbox-menu;
+
+      padding: 1rem;
+      background-color: var(--color-secondary);
+      z-index: 2;
+    }
+  }
 }
