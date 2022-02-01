@@ -59,4 +59,54 @@ body {
   background-color: var(--color-tertiary);
   grid-column: col-start 7 / center-end;
 }
+
+.villas {
+  background-color: var(--color-primary);
+  grid-column: container-start / container-end;
+}
+
+.motto {
+  background-color: var(--color-secondary);
+  grid-column: container-start / container-end;
+}
+
+.events-content {
+  background-color: var(--color-tertiary);
+  grid-column: container-start / col-end 9;
+}
+
+.events-text {
+  background-color: var(--color-primary);
+  grid-column: col-start 10 / center-end;
+}
+
+.gallery-text {
+  background-color: var(--color-secondary);
+  grid-column: center-start / col-end 1;
+}
+
+.gallery-carousel {
+  background-color: var(--color-tertiary);
+  grid-column: col-start 2 / container-end;
+}
+
+.features-content {
+  background-color: var(--color-primary);
+  grid-column: container-start / col-end 9;
+}
+
+.features-text {
+  background-color: var(--color-secondary);
+  grid-column: col-start 10 / center-end;
+}
+
+.testimonials {
+  background-color: var(--color-tertiary);
+  grid-column: center-start / center-end;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  grid-column: container-start / container-end;
+}
 /*# sourceMappingURL=styles.css.map */
