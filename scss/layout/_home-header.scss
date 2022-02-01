@@ -16,14 +16,52 @@
     left: 0;
     z-index: 2;
 
+    &--menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      // visibility: hidden;
+      overflow: hidden;
+
+      display: grid;
+      place-items: center;
+
+      > div {
+        color: transparent;
+      }
+    }
+
     input[type="checkbox"] {
       position: absolute;
 
       @include checkbox-menu;
 
-      // opacity: 0;
+      opacity: 0;
       cursor: pointer;
       z-index: 3;
+
+      // rotate menu
+      &:checked {
+        &:hover + .header__main-nav--hamburger > div {
+          transform: rotate(405deg);
+        }
+
+        + .header__main-nav--hamburger > div {
+          &::before {
+            left: 0;
+            top: 0;
+            width: 100%;
+            transform: rotate(270deg);
+          }
+          &::after {
+            opacity: 0;
+          }
+
+          transform: rotate(135deg);
+        }
+      }
     }
 
     &--hamburger {
@@ -33,6 +71,41 @@
       padding: 1rem;
       background-color: var(--color-secondary);
       z-index: 2;
+
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+
+      display: grid;
+      place-items: center;
+
+      > div {
+        position: relative;
+        height: 0.3rem;
+        width: 100%;
+        background-color: var(--color-quaternary);
+
+        display: grid;
+        place-items: center;
+        transition: all var(--transition-duration) ease-in-out;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: -1rem;
+          width: 60%;
+          height: inherit;
+          background-color: inherit;
+        }
+        &::before {
+          left: 0;
+        }
+        &::after {
+          top: 1rem;
+          right: 0;
+        }
+      }
     }
   }
 }
