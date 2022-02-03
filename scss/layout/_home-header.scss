@@ -29,7 +29,24 @@
       place-items: center;
 
       > div {
-        color: transparent;
+        background-color: var(--color-secondary);
+        height: 200%;
+        width: 200%;
+
+        display: grid;
+        place-items: center;
+
+        // transform: scaleX(0);
+        transition: all var(--transition-duration) ease-in-out;
+
+        > div {
+          // background-color: white;
+          text-align: center;
+          max-width: 90vw;
+          max-height: 100vh;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
       }
     }
 
@@ -60,6 +77,11 @@
           }
 
           transform: rotate(135deg);
+        }
+
+        & ~ .header__main-nav--menu {
+          // visibility: visible;
+          background-color: red;
         }
       }
     }

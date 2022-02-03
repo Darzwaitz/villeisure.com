@@ -116,7 +116,20 @@ i {
 }
 
 .header__main-nav--menu > div {
-  color: transparent;
+  background-color: var(--color-secondary);
+  height: 200%;
+  width: 200%;
+  display: grid;
+  place-items: center;
+  transition: all var(--transition-duration) ease-in-out;
+}
+
+.header__main-nav--menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .header__main-nav input[type="checkbox"] {
@@ -147,6 +160,10 @@ i {
 
 .header__main-nav input[type="checkbox"]:checked + .header__main-nav--hamburger > div::after {
   opacity: 0;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu {
+  background-color: red;
 }
 
 .header__main-nav--hamburger {
