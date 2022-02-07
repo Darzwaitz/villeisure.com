@@ -1,5 +1,15 @@
-// unused yet - delete this on first use
 /* ANIMATIONS */
+
+@keyframes main-nav {
+  0% {
+    transform: translateX(150rem) rotate(1800deg);
+    opacity: 0;
+  }
+  //   100% {
+  //     transform: translateX(0) rotate(0);
+  //     opacity: 1;
+  //   }
+}
 
 // @keyframes moveInLeft {
 //     0% {
@@ -35,6 +45,5 @@
 //         transform: translateX(0);
 //     }
 // }
-
 
 /* / ANIMATIONS */

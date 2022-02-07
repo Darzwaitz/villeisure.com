@@ -33,6 +33,15 @@
   --padding-section: 8vh 3vw;
 }
 
+/* ANIMATIONS */
+@keyframes main-nav {
+  0% {
+    transform: translateX(150rem) rotate(1800deg);
+    opacity: 0;
+  }
+}
+
+/* / ANIMATIONS */
 html {
   font-size: 62.5%;
 }
@@ -209,6 +218,7 @@ i {
   z-index: 2;
   display: grid;
   place-items: center;
+  animation: main-nav 2s;
 }
 
 .header__main-nav--hamburger > div {

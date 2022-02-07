@@ -136,6 +136,8 @@
       display: grid;
       place-items: center;
 
+      animation: main-nav 2s;
+
       > div {
         position: relative;
         height: 0.3rem;
