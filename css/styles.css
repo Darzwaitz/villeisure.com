@@ -110,17 +110,19 @@ i {
   left: 0;
   height: 100%;
   width: 100%;
+  visibility: hidden;
   overflow: hidden;
   display: grid;
   place-items: center;
 }
 
 .header__main-nav--menu > div {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-m-dark);
   height: 200%;
   width: 200%;
   display: grid;
   place-items: center;
+  transform: scaleX(0);
   transition: all var(--transition-duration) ease-in-out;
 }
 
@@ -130,6 +132,28 @@ i {
   max-height: 100vh;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+.header__main-nav--menu ul li a:link, .header__main-nav--menu ul li a:visited {
+  z-index: 5;
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+.header__main-nav--menu ul li a:link::before, .header__main-nav--menu ul li a:visited::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: scaleY(0);
+  background-color: var(--color-primary-m-dark);
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.header__main-nav--menu ul li a:hover::before, .header__main-nav--menu ul li a:active::before {
+  transform: scaleY(1);
 }
 
 .header__main-nav input[type="checkbox"] {
@@ -163,7 +187,15 @@ i {
 }
 
 .header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu {
-  background-color: red;
+  visibility: visible;
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu > div {
+  transform: scaleX(1);
+}
+
+.header__main-nav input[type="checkbox"]:checked ~ .header__main-nav--menu > div > div {
+  opacity: 1;
 }
 
 .header__main-nav--hamburger {
