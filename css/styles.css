@@ -106,6 +106,38 @@ i {
   grid-column: container-start / container-end;
 }
 
+.header__logo-content {
+  display: grid;
+  grid-template-columns: 1fr minmax(30rem, 1fr) 1fr;
+  grid-template-rows: min-content;
+  height: 90%;
+  justify-items: center;
+}
+
+.header__logo-content--content {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.header__logo-content--logo {
+  grid-column: 2 / 3;
+  letter-spacing: 0.2rem;
+}
+
+.header__logo-content-title {
+  font-size: calc(4rem + 4vw);
+  font-weight: 300;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+
+.header__logo-content span {
+  color: var(--color-tertiary);
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .header__main-nav {
   position: fixed;
   top: 0;
