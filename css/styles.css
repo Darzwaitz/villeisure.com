@@ -116,20 +116,26 @@ i {
 
 .header__logo-content--content {
   grid-column: 1 / -1;
-  text-align: center;
+  align-self: center;
 }
 
-.header__logo-content--logo {
+.header__logo-content--content--logo {
   grid-column: 2 / 3;
   letter-spacing: 0.2rem;
 }
 
-.header__logo-content-title {
+.header__logo-content--content-title {
   font-size: calc(4rem + 4vw);
   font-weight: 300;
   color: var(--color-white);
   text-transform: uppercase;
-  padding: 0 2rem;
+  padding: 0 2rem 0 var(--font-size-title);
+}
+
+.header__logo-content--content-para {
+  font-size: calc(1rem + 2vw);
+  font-weight: 500;
+  padding: 2vh 2rem 6vh var(--font-size-title);
 }
 
 .header__logo-content span {

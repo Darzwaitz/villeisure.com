@@ -19,21 +19,23 @@
 
     &--content {
       grid-column: 1 / -1;
-      text-align: center;
-    }
-
-    &--logo {
-      grid-column: 2 / 3;
-      letter-spacing: 0.2rem;
-    }
-    &-title {
-      font-size: calc(4rem + 4vw);
-      font-weight: 300;
-      color: var(--color-white);
-      text-transform: uppercase;
-      padding: 0 2rem;
-    }
-    &-para {
+      align-self: center;
+      &--logo {
+        grid-column: 2 / 3;
+        letter-spacing: 0.2rem;
+      }
+      &-title {
+        font-size: calc(4rem + 4vw);
+        font-weight: 300;
+        color: var(--color-white);
+        text-transform: uppercase;
+        padding: 0 2rem 0 var(--font-size-title);
+      }
+      &-para {
+        font-size: calc(1rem + 2vw);
+        font-weight: 500;
+        padding: 2vh 2rem 6vh var(--font-size-title);
+      }
     }
 
     span {
