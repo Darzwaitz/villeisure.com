@@ -76,6 +76,13 @@ a:visited {
   z-index: 1;
 }
 
+@media screen and (max-width: 62.5em) {
+  a:link,
+  a:visited {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
 p {
   color: var(--color-white);
   font-size: calc(1rem + 1vw);
@@ -89,7 +96,6 @@ li {
 
 i {
   font-size: var(--font-size-title);
-  color: var(--color-secondary);
 }
 
 .container {
@@ -136,6 +142,12 @@ i {
   font-size: calc(1rem + 2vw);
   font-weight: 500;
   padding: 2vh 2rem 6vh var(--font-size-title);
+}
+
+@media screen and (max-width: 37.5em) {
+  .header__logo-content--content-para {
+    font-size: 2rem;
+  }
 }
 
 .header__logo-content--content-link:link, .header__logo-content--content-link:visited {

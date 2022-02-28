@@ -9,6 +9,10 @@ a:visited {
   position: relative;
   transition: all var(--transition-duration) cubic-bezier(1, 0, 0, 1);
   z-index: 1;
+  // media query - tablet port size
+  @include respond(tab-port) {
+    font-size: calc(1rem + 1vw);
+  }
 }
 
 // paragraphs
@@ -25,7 +29,7 @@ li {
 // iconz
 i {
   font-size: var(--font-size-title);
-  color: var(--color-secondary);
+  // color: var(--color-secondary);
 }
 
 // .u-center-text {
