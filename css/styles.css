@@ -355,9 +355,35 @@ i {
   position: relative;
 }
 
+.booking-date__schedule--arrival > div::before, .booking-date__schedule--departure > div::before, .booking-date__schedule--guests > div::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 1.5rem;
+  margin-left: -1.5rem;
+  border-style: solid;
+  border-color: transparent transparent var(--color-secondary) transparent;
+}
+
+.booking-date__schedule--arrival > div p:nth-of-type(2), .booking-date__schedule--departure > div p:nth-of-type(2), .booking-date__schedule--guests > div p:nth-of-type(2) {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .booking-date__schedule--arrival h5, .booking-date__schedule--departure h5, .booking-date__schedule--guests h5 {
   font-size: calc(1rem + 1vw);
   text-align: center;
+}
+
+.booking-date__contact {
+  align-self: end;
+}
+
+.booking-date__contact--link {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transition: all var(--transition-duration) ease-in-out;
 }
 
 .booking-content {

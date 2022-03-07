@@ -26,12 +26,39 @@
         grid-template-rows: repeat(3, 1fr);
         place-items: center;
         position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          border-width: 1.5rem;
+          margin-left: -1.5rem;
+          border-style: solid;
+          border-color: transparent transparent var(--color-secondary)
+            transparent;
+        }
+
+        p:nth-of-type(2) {
+          font-size: 3rem;
+          font-weight: 700;
+        }
       }
 
       h5 {
         font-size: calc(1rem + 1vw);
         text-align: center;
       }
+    }
+  }
+
+  &__contact {
+    align-self: end;
+
+    &--link {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      transition: all var(--transition-duration) ease-in-out;
     }
   }
 }
