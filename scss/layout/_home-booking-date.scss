@@ -56,9 +56,18 @@
     align-self: end;
 
     &--link {
-      background-color: var(--color-secondary);
-      color: var(--color-white);
-      transition: all var(--transition-duration) ease-in-out;
+      &:link,
+      &:visited {
+        background-color: var(--color-secondary);
+        color: var(--color-white);
+        transition: all var(--transition-duration) ease-in-out;
+      }
+      &:hover,
+      &:active {
+        color: var(--color-secondary);
+        background-color: var(--color-white);
+        border: 0.1rem var(--color-secondary) solid;
+      }
     }
   }
 }

@@ -380,10 +380,16 @@ i {
   align-self: end;
 }
 
-.booking-date__contact--link {
+.booking-date__contact--link:link, .booking-date__contact--link:visited {
   background-color: var(--color-secondary);
   color: var(--color-white);
   transition: all var(--transition-duration) ease-in-out;
+}
+
+.booking-date__contact--link:hover, .booking-date__contact--link:active {
+  color: var(--color-secondary);
+  background-color: var(--color-white);
+  border: 0.1rem var(--color-secondary) solid;
 }
 
 .booking-content {
