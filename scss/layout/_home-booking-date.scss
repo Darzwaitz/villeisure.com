@@ -1,10 +1,10 @@
 .booking-date {
-  background-color: green;
+  // background-color: green;
   grid-column: col-start 7 / center-end;
   padding: var(--padding-section);
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
 
   &__schedule {
     display: grid;
@@ -65,7 +65,7 @@
       // }
       &:not(:first-of-type) {
         font-size: 2rem;
-        color: var(--color-primary);
+        // color: var(--color-primary);
       }
     }
 
