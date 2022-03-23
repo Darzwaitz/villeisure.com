@@ -55,6 +55,20 @@
   &__contact {
     align-self: end;
 
+    p {
+      &:first-of-type {
+        margin-top: 4rem;
+      }
+      // &:nth-of-type(2),
+      // &:nth-of-type(3) {
+      //   font-size: 2rem;
+      // }
+      &:not(:first-of-type) {
+        font-size: 2rem;
+        color: var(--color-primary);
+      }
+    }
+
     &--link {
       &:link,
       &:visited {

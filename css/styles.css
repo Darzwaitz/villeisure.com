@@ -380,6 +380,15 @@ i {
   align-self: end;
 }
 
+.booking-date__contact p:first-of-type {
+  margin-top: 4rem;
+}
+
+.booking-date__contact p:not(:first-of-type) {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
 .booking-date__contact--link:link, .booking-date__contact--link:visited {
   background-color: var(--color-secondary);
   color: var(--color-white);
