@@ -4,6 +4,11 @@
     grid-column: center-start / center-end;
     grid-row-gap: 7vh;
   }
+
+  // media query - phone size
+  @include respond(phone) {
+    grid-template-rows: repeat(2, max-content);
+  }
   // background-color: green;
   grid-column: col-start 7 / center-end;
   padding: var(--padding-section);
@@ -12,6 +17,12 @@
   // grid-template-rows: repeat(2, 1fr);
 
   &__schedule {
+    // media query - smallest size
+    @include respond(smallest) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: auto;
+      grid-row-gap: 4vh;
+    }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2vw;
@@ -28,6 +39,15 @@
         @include respond(tab-port) {
           padding: 2rem;
           grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: min-content;
+          grid-column-gap: 2vw;
+          place-items: centre;
+        }
+
+        // media query - phone size
+        @include respond(phone) {
+          padding: 4rem;
+          grid-template-columns: min-content;
         }
         background-color: var(--color-secondary);
         padding: 2rem 4rem;
@@ -63,6 +83,11 @@
   }
 
   &__contact {
+    // media query - smallest size
+    @include respond(smallest) {
+      justify-self: center;
+      padding: 0rem 2rem;
+    }
     align-self: end;
 
     p {

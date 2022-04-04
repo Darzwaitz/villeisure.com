@@ -43,6 +43,10 @@
   }
 
   &__para {
+    // media query - phone size
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
     padding: 2rem;
   }
 

@@ -340,11 +340,25 @@ i {
   }
 }
 
+@media screen and (max-width: 37.5em) {
+  .booking-date {
+    grid-template-rows: repeat(2, max-content);
+  }
+}
+
 .booking-date__schedule {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2vw;
   place-items: center;
+}
+
+@media screen and (max-width: 25em) {
+  .booking-date__schedule {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    grid-row-gap: 4vh;
+  }
 }
 
 .booking-date__schedule--arrival, .booking-date__schedule--departure, .booking-date__schedule--guests {
@@ -365,6 +379,16 @@ i {
   .booking-date__schedule--arrival > div, .booking-date__schedule--departure > div, .booking-date__schedule--guests > div {
     padding: 2rem;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    grid-column-gap: 2vw;
+    place-items: centre;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .booking-date__schedule--arrival > div, .booking-date__schedule--departure > div, .booking-date__schedule--guests > div {
+    padding: 4rem;
+    grid-template-columns: min-content;
   }
 }
 
@@ -391,6 +415,13 @@ i {
 
 .booking-date__contact {
   align-self: end;
+}
+
+@media screen and (max-width: 25em) {
+  .booking-date__contact {
+    justify-self: center;
+    padding: 0rem 2rem;
+  }
 }
 
 .booking-date__contact p {
@@ -468,6 +499,12 @@ i {
 
 .booking-content__para {
   padding: 2rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .booking-content__para {
+    font-size: 1.5rem;
+  }
 }
 
 .booking-content__icons {
