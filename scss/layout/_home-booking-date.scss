@@ -1,4 +1,9 @@
 .booking-date {
+  @include respond(tab-port) {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+    grid-row-gap: 7vh;
+  }
   // background-color: green;
   grid-column: col-start 7 / center-end;
   padding: var(--padding-section);
@@ -19,6 +24,11 @@
       grid-row-gap: 3vh;
 
       > div {
+        // media query - tablet port size
+        @include respond(tab-port) {
+          padding: 2rem;
+          grid-template-columns: repeat(3, 1fr);
+        }
         background-color: var(--color-secondary);
         padding: 2rem 4rem;
 
@@ -56,6 +66,7 @@
     align-self: end;
 
     p {
+      color: var(--color-primary);
       &:first-of-type {
         margin-top: 4rem;
       }

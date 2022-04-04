@@ -76,7 +76,7 @@ a:visited {
   z-index: 1;
 }
 
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 50em) {
   a:link,
   a:visited {
     font-size: calc(1rem + 1vw);
@@ -332,6 +332,14 @@ i {
   display: grid;
 }
 
+@media screen and (max-width: 50em) {
+  .booking-date {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+    grid-row-gap: 7vh;
+  }
+}
+
 .booking-date__schedule {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -351,6 +359,13 @@ i {
   grid-template-rows: repeat(3, 1fr);
   place-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 50em) {
+  .booking-date__schedule--arrival > div, .booking-date__schedule--departure > div, .booking-date__schedule--guests > div {
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .booking-date__schedule--arrival > div::before, .booking-date__schedule--departure > div::before, .booking-date__schedule--guests > div::before {
@@ -376,6 +391,10 @@ i {
 
 .booking-date__contact {
   align-self: end;
+}
+
+.booking-date__contact p {
+  color: var(--color-primary);
 }
 
 .booking-date__contact p:first-of-type {
@@ -406,11 +425,24 @@ i {
   grid-gap: 2vh;
 }
 
+@media screen and (max-width: 50em) {
+  .booking-content {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+  }
+}
+
 .booking-content__title {
   font-size: var(--font-size-title);
   padding: 0rem 2rem 1rem;
   font-weight: 300;
   position: relative;
+}
+
+@media screen and (max-width: 50em) {
+  .booking-content__title {
+    text-align: center;
+  }
 }
 
 .booking-content__title::after {
@@ -421,6 +453,13 @@ i {
   height: 0.2rem;
   width: 30%;
   background-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 50em) {
+  .booking-content__title::after {
+    width: 20%;
+    left: 40%;
+  }
 }
 
 .booking-content p {
