@@ -1,4 +1,9 @@
 .villas {
-  background-color: var(--color-primary);
   grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+div[class^="villas"] {
+  padding: 2rem;
 }
