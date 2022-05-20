@@ -525,6 +525,19 @@ i {
   grid-column: container-start / container-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 50em) {
+  .villas {
+    grid-gap: 0;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .villas {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
 }
 
 .villas__villa-1 {
@@ -571,6 +584,12 @@ div[class^="villas"] p[class^="villas"] {
   margin: 1.5rem 0 4rem 0;
   color: var(--color-white);
   font-weight: 500;
+}
+
+@media screen and (max-width: 37.5em) {
+  div[class^="villas"] p[class^="villas"] {
+    font-size: 1.5rem;
+  }
 }
 
 div[class^="villas"] h2[class^="villas"] {

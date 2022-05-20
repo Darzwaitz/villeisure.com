@@ -1,7 +1,18 @@
 .villas {
+  // media query - tablet port size
+  @include respond(tab-port) {
+    grid-gap: 0;
+  }
+
+  // media query - smallest size
+  @include respond(smallest) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
   grid-column: container-start / container-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem;
 
   &__villa {
     &-1 {
@@ -79,6 +90,11 @@ div[class^="villas"] {
   }
 
   p[class^="villas"] {
+    // media query - phone size
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+
     font-size: 2rem;
     margin: 1.5rem 0 4rem 0;
     color: var(--color-white);
