@@ -528,12 +528,33 @@ i {
 }
 
 .villas__villa-1 {
-  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("img/villas/villa-1.jpg");
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-1.jpg");
+}
+
+.villas__villa-2 {
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-2.jpg");
+}
+
+.villas__villa-3 {
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-3.jpg");
+}
+
+.villas__villa-4 {
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-4.jpg");
+}
+
+.villas__villa-5 {
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-5.jpg");
+}
+
+.villas__villa-6 {
+  background: linear-gradient(var(--color-primary-m-light), var(--color-tertiary-m-light)), url("../../img/villas/villa-6.jpg");
 }
 
 div[class^="villas"] {
-  background-color: green;
   padding: 2rem;
+  background-position: center;
+  background-size: cover;
   transition: transform var(--transition-duration) ease-in-out;
 }
 
