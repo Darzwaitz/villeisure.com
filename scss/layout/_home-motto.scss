@@ -1,4 +1,38 @@
 .motto {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   grid-column: container-start / container-end;
+
+  padding: 10vh 3vw;
+
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    &--title {
+      font-size: var(--font-size-title);
+      padding: 0rem 2rem 1rem;
+      font-weight: 300;
+      color: var(--color-white);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        height: 0.2rem;
+        width: 10%;
+        background-color: var(--color-white);
+      }
+    }
+    &--para {
+      // media query - smallest size
+      @include respond(smallest) {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
