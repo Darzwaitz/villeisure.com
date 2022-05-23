@@ -674,6 +674,17 @@ div[class^="villas"]:hover, div[class^="villas"]:active {
 .events-content {
   background-color: var(--color-tertiary);
   grid-column: container-start / col-end 9;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.events-content > div {
+  padding: var(--padding-section);
+  display: grid;
+  grid-template-areas: "title" "para";
+  grid-row-gap: 4vh;
+  align-items: center;
+  justify-items: start;
 }
 
 .events-text {
