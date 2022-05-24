@@ -16,5 +16,18 @@
     grid-row-gap: 4vh;
     align-items: center;
     justify-items: start;
+
+    h2[class*="title"] {
+      grid-area: title;
+      font-size: var(--font-size-title);
+      font-weight: 400;
+      color: var(--color-white);
+    }
+
+    p[class*="para"] {
+      grid-area: para;
+      color: var(--color-white);
+      font-weight: 500;
+    }
   }
 }
